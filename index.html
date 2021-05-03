@@ -10,30 +10,45 @@
       rel="stylesheet">
   <title>kitchen_site</title>
 </head>
-<body>
+<body id="top">
 
   <header>
     <div class="logo">
-      <img src="images/logo_01.png" alt="">
+      <a href=""><img src="images/logo_01.png" alt="" class="logo_tb"></a>
+      <a href=""><img src="images/logo_02.png" alt="" class="logo_sp"></a>
+      <a href=""><img src="images/logo_pc.png" alt="" class="pc"></a>
     </div>
-    <div class="header_contents">
-      <form id="form1" action="" method="GET">
-        <input id="sbox1" id="s" name="s" type="text" placeholder="フリーワードを入力">
-        <button id="sbtn1" type="submit"><i class="fas fa-search"></i></button>
-      </form>
-      <div class="menu_btn">
-        <span id="open" class="material-icons">menu</span>
-        <span id="close" class="material-icons">close</span>
+    <div class="header_wrapper">
+      <div class="header_contents">
+        <form id="form1" action="" method="GET">
+          <input id="sbox1" id="s" name="s" type="text" placeholder="フリーワードを入力">
+          <button id="sbtn1" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="menu_btn sp">
+          <span id="open" class="material-icons">menu</span>
+          <span id="close" class="material-icons">close</span>
+        </div>
+        <nav id="main_nav_sp">
+          <ul>
+            <li><a href="">キッチンキューブとは</a></li>
+            <li><a href="">商品一覧</a></li>
+            <li><a href="">WEBカタログ</a></li>
+            <li><a href="">会社案内</a></li>
+            <li><a href="">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <nav id="main_nav_pc" class="pc">
+          <ul>
+            <li><a href="">キッチンキューブとは</a></li>
+            <li><a href="">商品一覧</a></li>
+            <li><a href="">WEBカタログ</a></li>
+            <li><a href="">会社案内</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav id="main_nav_sp">
-        <ul>
-          <li>キッチンキューブとは</li>
-          <li>商品一覧</li>
-          <li> WEBカタログ</li>
-          <li>会社案内</li>
-          <li>お問い合わせ</li>
-        </ul>
-      </nav>
+      <div class="contact_btn pc">
+        <a href=""><img src="images/mail_02.png">お問い合わせ</a>
+      </div>
     </div>
   </header>
   
@@ -55,6 +70,24 @@
       <div class="swiper-button-prev"></div>
     </div>
 
+    <!-- Swiper -->
+    <div class="swiper-container swiper-container_1 pc">
+      <div class="visual_contents">
+        <h1>あなたの<span>「あった！」</span>がきっとある<br><span>キッチンキューブ</span></h1>
+        <a href="" class="btn">キッチンキューブとは</a>
+      </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/main_v01.png" alt=""></div>
+        <div class="swiper-slide"><img src="images/main_v02.png" alt=""></div>
+        <div class="swiper-slide"><img src="images/main_v00.png" alt=""></div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    
   <main>
 
     <section id="products">
@@ -64,15 +97,16 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide"><img src="images/products_00.png"></div>
       <div class="swiper-slide"><img src="images/products_01.png"></div>
+      <div class="swiper-slide"><img src="images/products_02.png"></div>
+      <div class="swiper-slide"><img src="images/products_03.png"></div>
       <div class="swiper-slide"><img src="images/products_00.png"></div>
+      <div class="swiper-slide"><img src="images/products_01.png"></div>
+      <div class="swiper-slide"><img src="images/products_02.png"></div>
+      <div class="swiper-slide"><img src="images/products_03.png"></div>
       <div class="swiper-slide"><img src="images/products_00.png"></div>
-      <div class="swiper-slide"><img src="images/products_00.png"></div>
-      <div class="swiper-slide"><img src="images/products_00.png"></div>
-      <div class="swiper-slide"><img src="images/products_00.png"></div>
-      <div class="swiper-slide"><img src="images/products_00.png"></div>
-      <div class="swiper-slide"><img src="images/products_00.png"></div>
-      <div class="swiper-slide"><img src="images/products_00.png"></div>
-      <div class="swiper-slide"><img src="images/products_00.png"></div>
+      <div class="swiper-slide"><img src="images/products_01.png"></div>
+      <div class="swiper-slide"><img src="images/products_02.png"></div>
+      <div class="swiper-slide"><img src="images/products_03.png"></div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
@@ -80,25 +114,29 @@
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
   </div>
-      <ul>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-      </ul>
       <a href="" class="btn">商品一覧はこちら</a>
     </section>
 
     <section id="information">
       <h1>INFORMATION<span>お知らせ</span></h1>
-      <dl>
-        <dt class="notice">YYYY/MM/DD<span>お知らせ</span></dt>
-        <dd><a href="">テキストテキストテキストテキストテキストテキストテキスト</a></dd>
-        <dt class="news">YYYY/MM/DD<span>新着情報</span></dt>
-        <dd><a href="">テキストテキストテキストテキストテキストテキストテキスト</a></dd>
-        <dt class="notice">YYYY/MM/DD<span>お知らせ</span></dt>
-        <dd><a href="">テキストテキストテキストテキストテキストテキストテキスト</a></dd>
-        <dt class="news">YYYY/MM/DD<span>新着情報</span></dt>
-        <dd><a href="">テキストテキストテキストテキストテキストテキストテキスト</a></dd>
-      </dl>
+      <div class="info_wrapper">
+        <dl>
+          <dt class="notice">YYYY/MM/DD<span>お知らせ</span></dt>
+          <dd><a href="">テキストテキストテキストテキストテキストテキストテキスト</a></dd>
+        </dl>
+        <dl>
+          <dt class="news">YYYY/MM/DD<span>新着情報</span></dt>
+          <dd><a href="">テキストテキストテキストテキストテキストテキストテキスト</a></dd>
+        </dl>
+        <dl>
+          <dt class="notice">YYYY/MM/DD<span>お知らせ</span></dt>
+          <dd><a href="">テキストテキストテキストテキストテキストテキストテキスト</a></dd>
+        </dl>
+        <dl>
+          <dt class="news">YYYY/MM/DD<span>新着情報</span></dt>
+          <dd><a href="">テキストテキストテキストテキストテキストテキストテキスト</a></dd>
+        </dl>
+      </div>
       <a href="" class="btn">お知らせ一覧はこちら</a>
     </section>
 
@@ -148,8 +186,8 @@
   </main>
 
   <footer>
-    <div class="arrow"><a href=""></a></div>
-    <img src="images/logo.png" alt="">
+    <div class="arrow"><a href="#top"></a></div>
+    <img src="images/logo_pc.png" alt="">
     <ul>
       <li>〒〇〇〇-〇〇〇〇<br>〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</li>
       <li>TEL：〇〇〇〇-〇〇-〇〇〇〇</li>
